@@ -55,7 +55,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Varahi Bird Safety Nets</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Harsha Safety Nets Services</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Your trusted partner in comprehensive safety solutions, protecting families and 
               properties with professional-grade safety nets and expert installation services.
@@ -96,7 +96,7 @@ const About = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in 2014, Varahi Bird Safety Nets began with a simple mission: to provide 
+                Founded in 2014, Harsha Safety Nets Services began with a simple mission: to provide 
                 reliable, high-quality safety solutions that protect what matters most to our customers.
               </p>
               <p className="text-lg text-gray-600 mb-6">

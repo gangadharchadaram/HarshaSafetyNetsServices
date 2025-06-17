@@ -10,7 +10,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
+    // { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Products', path: '/products' },
     { name: 'Previous Works', path: '/works' },
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">Varahi Bird Safety Nets</span>
+            <span className="text-xl font-bold text-primary">Harsha Safety Nets Services</span>
           </Link>
 
           {/* Desktop Navigation */}

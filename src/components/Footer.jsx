@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">Varahi Bird Safety Nets</span>
+              <span className="text-xl font-bold">Harsha Safety Nets Services</span>
             </div>
             <p className="text-gray-300 mb-4">
               Professional anti-bird control services providing comprehensive safety solutions 
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-gray-300">info@varahibirdsafety.com</span>
+                <span className="text-gray-300">info@harshasafetynets.com</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-primary mt-1" />
@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Varahi Bird Safety Nets. All rights reserved. | Professional Anti-Bird Control Services
+            © 2024 Harsha Safety Nets Services. All rights reserved. | Professional Anti-Bird Control Services
           </p>
         </div>
       </div>
