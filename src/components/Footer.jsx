@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { motion } from 'framer-motion';
+
 
 const Footer = () => {
   return (
@@ -11,8 +13,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Shield className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">Harsha Safety Nets Services</span>
+ <motion.img
+              alt="Harsha Safety Nets Services"
+              className="h-12 w-auto max-w-[220px]" // Adjust these as per your layout
+              // whileHover={{ rotate: [0, 10, -10, 0], scale: 1.1 }}
+              // transition={{ duration: 0.5 }}
+             src="https://ik.imagekit.io/x3z2alsqy/harsha_safety_nets_logo_only.png?updatedAt=1750251965500" />              <span className="text-xl font-bold">Harsha Safety Nets Services</span>
             </div>
             <p className="text-gray-300 mb-4">
               Professional anti-bird control services providing comprehensive safety solutions 
@@ -44,15 +50,15 @@ const Footer = () => {
             <span className="text-lg font-semibold mb-4 block">Contact Info</span>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Phone className="h-5 w-5 text-primary" />
+                <Phone className="h-5 w-5 text-blue-400" />
                 <span className="text-gray-300">+91 98765 43210</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="h-5 w-5 text-primary" />
+                <Mail className="h-5 w-5 text-blue-400" />
                 <span className="text-gray-300">info@harshasafetynets.com</span>
               </div>
               <div className="flex items-start space-x-2">
-                <MapPin className="h-5 w-5 text-primary mt-1" />
+                <MapPin className="h-5 w-5 text-blue-400 mt-1" />
                 <span className="text-gray-300">
                   123 Safety Street, Protection City, State - 560001
                 </span>
