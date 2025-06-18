@@ -73,13 +73,13 @@ const Home = () => {
               expert anti-bird control services
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 pulse-glow">
+              <Button asChild size="lg" className="bg-white text-blue-400 hover:bg-gray-100 pulse-glow">
                 <Link to="/contact">Get Free Consultation</Link>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-primary hover:bg-white hover:text-primary"
+                className="border-white text-blue-400 hover:bg-white hover:text-primary"
                 onClick={handleCallNow}
               >
                 <Phone className="mr-2 h-5 w-5" />
@@ -123,9 +123,9 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-primary">
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-blue-400">
                   <CardHeader>
-                    <service.icon className="h-12 w-12 text-primary mb-4" />
+                    <service.icon className="h-12 w-12 text-blue-400 mb-4" />
                     <CardTitle className="text-xl">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -150,7 +150,7 @@ const Home = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose Ajay Safety Nets Services?
+                Why Choose Harsha Safety Nets Services?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 With years of experience in the safety net industry, we provide reliable, 
@@ -166,7 +166,7 @@ const Home = () => {
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center space-x-3"
                   >
-                    <CheckCircle className="h-5 w-5 text-primary" />
+                    <CheckCircle className="h-5 w-5 text-blue-400" />
                     <span className="text-gray-700">{feature}</span>
                   </motion.div>
                 ))}
@@ -190,7 +190,7 @@ const Home = () => {
                 className="rounded-lg shadow-2xl w-full h-96 object-cover"
                 alt="Professional safety net installation"
                src="https://images.unsplash.com/photo-1673300982703-be76f17b5c92" />
-              <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 -right-6 bg-blue-400 text-white p-6 rounded-lg shadow-lg">
                 <div className="flex items-center space-x-2">
                   <Star className="h-6 w-6 fill-current" />
                   <div>
@@ -220,10 +220,10 @@ const Home = () => {
               Our experts are ready to help you choose the perfect solution.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
+              <Button asChild size="lg" className="bg-white text-blue-400 hover:bg-gray-100">
                 <Link to="/contact">Get Free Consultation</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-primary hover:bg-white hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="border-white text-blue-400 hover:bg-white hover:text-primary">
                 <Link to="/products">View Our Products</Link>
               </Button>
             </div>

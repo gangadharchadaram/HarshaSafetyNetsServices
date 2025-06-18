@@ -209,7 +209,7 @@ const Maintenance = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-gray-100"
+                className="bg-white text-blue-400 hover:bg-gray-100"
                 onClick={() => handleScheduleService('General Maintenance Service')}
               >
                 Schedule Maintenance
@@ -217,7 +217,7 @@ const Maintenance = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-primary hover:bg-white hover:text-primary"
+                className="border-white text-blue-400 hover:bg-white hover:text-blue-400"
                 onClick={handleEmergencyCall}
               >
                 <Phone className="mr-2 h-5 w-5" />

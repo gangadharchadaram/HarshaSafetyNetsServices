@@ -65,7 +65,7 @@ const MaintenanceProcessSection = () => {
             <div className="space-y-6">
               {processSteps.map((process) => (
                 <div key={process.step} className="flex items-start space-x-4">
-                  <div className="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                  <div className="bg-blue-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
                     {process.step}
                   </div>
                   <div>

@@ -11,9 +11,9 @@ const MaintenanceServiceCard = ({ service, index, onScheduleService }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
-      <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-primary">
+      <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-l-4 border-l-blue-400">
         <CardHeader className="text-center">
-          <service.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+          <service.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
           <CardTitle className="text-xl">{service.title}</CardTitle>
           <div className="text-sm text-gray-500">{service.frequency}</div>
         </CardHeader>
@@ -27,14 +27,14 @@ const MaintenanceServiceCard = ({ service, index, onScheduleService }) => {
             <ul className="space-y-1">
               {service.features.map((feature, idx) => (
                 <li key={idx} className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-primary" />
+                  <CheckCircle className="h-4 w-4 text-blue-400" />
                   <span className="text-sm text-gray-600">{feature}</span>
                 </li>
               ))}
             </ul>
           </div>
           
-          <div className="text-lg font-semibold text-primary mb-4">{service.price}</div>
+          <div className="text-lg font-semibold text-blue-400 mb-4">{service.price}</div>
           
           <Button 
             className="w-full gradient-bg"

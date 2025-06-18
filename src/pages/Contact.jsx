@@ -165,7 +165,7 @@ const Contact = () => {
               >
                 <Card className="text-center hover:shadow-lg transition-shadow duration-300 h-full">
                   <CardHeader>
-                    <info.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                    <info.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
                     <CardTitle className="text-lg">{info.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -326,7 +326,7 @@ const Contact = () => {
                       'Ongoing maintenance and support'
                     ].map((benefit, index) => (
                       <div key={index} className="flex items-center space-x-3">
-                        <CheckCircle className="h-5 w-5 text-primary" />
+                        <CheckCircle className="h-5 w-5 text-blue-400" />
                         <span className="text-gray-700">{benefit}</span>
                       </div>
                     ))}

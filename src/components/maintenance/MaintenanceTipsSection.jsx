@@ -50,7 +50,7 @@ const MaintenanceTipsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
-              <tip.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+              <tip.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{tip.title}</h3>
               <p className="text-gray-600">{tip.description}</p>
             </motion.div>

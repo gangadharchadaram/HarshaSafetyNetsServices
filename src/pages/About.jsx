@@ -76,7 +76,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                <stat.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
                 <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </motion.div>
@@ -150,7 +150,7 @@ const About = () => {
               >
                 <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">
                   <CardHeader>
-                    <value.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                    <value.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
                     <CardTitle className="text-xl">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -181,7 +181,7 @@ const About = () => {
           </motion.div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-400"></div>
             
             {milestones.map((milestone, index) => (
               <motion.div
@@ -197,7 +197,7 @@ const About = () => {
                   <Card className="hover:shadow-lg transition-shadow duration-300">
                     <CardHeader>
                       <div className="flex items-center space-x-2">
-                        <div className="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
+                        <div className="bg-blue-400 text-white px-3 py-1 rounded-full text-sm font-bold">
                           {milestone.year}
                         </div>
                         <CardTitle className="text-lg">{milestone.event}</CardTitle>
@@ -211,7 +211,7 @@ const About = () => {
                   </Card>
                 </div>
                 
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-white"></div>
               </motion.div>
             ))}
           </div>

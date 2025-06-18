@@ -142,7 +142,7 @@ const Works = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">{stat.value}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </motion.div>
             ))}
@@ -179,7 +179,7 @@ const Works = () => {
                       className="w-full h-64 object-cover"
                       alt={`${project.title} project`}
                      src="https://images.unsplash.com/photo-1572177812156-58036aae439c" />
-                    <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute top-4 left-4 bg-blue-400 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {project.category}
                     </div>
                   </div>
@@ -207,7 +207,7 @@ const Works = () => {
                       <div className="grid grid-cols-2 gap-2">
                         {project.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center space-x-2">
-                            <CheckCircle className="h-4 w-4 text-primary" />
+                            <CheckCircle className="h-4 w-4 text-blue-400" />
                             <span className="text-sm text-gray-600">{feature}</span>
                           </div>
                         ))}
@@ -322,7 +322,7 @@ const Works = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-gray-100"
+              className="bg-white text-blue-400 hover:bg-gray-100"
               onClick={() => handleViewDetails('New Project Installation')}
             >
               Get Your Free Quote Today

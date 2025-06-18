@@ -156,15 +156,15 @@ const Products = () => {
                     <img  
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                       alt={`${product.title} installation`}
-                     src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.meesho.com%2Fshinjai-10x5-bird-net-nylon-bird-control-net-net-for-balcony-child-protection-net-anti-bird-net-net-for-pigeon-monkey-net%2Fp%2F8xowf8&psig=AOvVaw1QJSv-g3PU44ZjiBGblvz8&ust=1750167355284000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJjm59KH9o0DFQAAAAAdAAAAABBK" />
-                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                     src="https://images.unsplash.com/photo-1635865165118-917ed9e20936" />
+                    <div className="absolute top-4 right-4 bg-blue-400 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {product.category}
                     </div>
                   </div>
                   
                   <CardHeader>
                     <div className="flex items-center space-x-3 mb-2">
-                      <product.icon className="h-8 w-8 text-primary" />
+                      <product.icon className="h-8 w-8 text-blue-400" />
                       <CardTitle className="text-xl">{product.title}</CardTitle>
                     </div>
                     <CardDescription className="text-gray-600">
@@ -178,7 +178,7 @@ const Products = () => {
                       <ul className="space-y-2">
                         {product.features.map((feature, idx) => (
                           <li key={idx} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-primary rounded-full"></div>
+                            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                             <span className="text-sm text-gray-600">{feature}</span>
                           </li>
                         ))}
@@ -246,7 +246,7 @@ const Products = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center"
               >
-                <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                <feature.icon className="h-12 w-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
@@ -271,7 +271,7 @@ const Products = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-gray-100"
+              className="bg-white text-blue-400 hover:bg-gray-100"
               onClick={() => handleGetQuote('Custom Safety Net Solution')}
             >
               Request Custom Quote
