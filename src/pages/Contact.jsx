@@ -8,8 +8,12 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/components/ui/use-toast';
 import { useLocation } from 'react-router-dom';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
+    const watsappNumber = "918142541365"; 
+  const phoneNumber = "918142541365";
   const { toast } = useToast();
   const locationHook = useLocation(); // Renamed to avoid conflict with formData.location
 
@@ -394,6 +398,42 @@ const Contact = () => {
           </div>
         </div>
       </section>
+        <a
+              href={`https://wa.me/${watsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                position: 'fixed',
+                bottom: '20px',
+                right: '20px',
+                zIndex: 1000,
+                backgroundColor: '#25D366',
+                color: '#fff',
+                borderRadius: '50%',
+                padding: '15px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                textAlign: 'center'
+              }}
+            >
+              <FaWhatsapp size={30} />
+            </a>
+             <a
+              href={`tel:${phoneNumber}`}
+              style={{
+                position: 'fixed',
+                bottom: '90px',
+                right: '20px',
+                zIndex: 1000,
+                backgroundColor: '#007BFF',
+                color: '#fff',
+                borderRadius: '50%',
+                padding: '15px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                textAlign: 'center'
+              }}
+            >
+              <FaPhone size={30} />
+            </a>
     </div>
   );
 };

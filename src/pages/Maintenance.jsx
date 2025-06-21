@@ -8,6 +8,8 @@ import MaintenanceServiceCard from '@/components/maintenance/MaintenanceServiceC
 import MaintenancePlanCard from '@/components/maintenance/MaintenancePlanCard';
 import MaintenanceProcessSection from '@/components/maintenance/MaintenanceProcessSection';
 import MaintenanceTipsSection from '@/components/maintenance/MaintenanceTipsSection';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
 
 const maintenanceServicesData = [
   {
@@ -43,6 +45,9 @@ const maintenanceServicesData = [
     price: 'Starting from ₹1500'
   }
 ];
+
+  const watsappNumber = "918142541365"; 
+  const phoneNumber = "918142541365";
 
 const maintenancePlansData = [
   {
@@ -227,6 +232,42 @@ const Maintenance = () => {
           </motion.div>
         </div>
       </section>
+        <a
+              href={`https://wa.me/${watsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                position: 'fixed',
+                bottom: '20px',
+                right: '20px',
+                zIndex: 1000,
+                backgroundColor: '#25D366',
+                color: '#fff',
+                borderRadius: '50%',
+                padding: '15px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                textAlign: 'center'
+              }}
+            >
+              <FaWhatsapp size={30} />
+            </a>
+             <a
+              href={`tel:${phoneNumber}`}
+              style={{
+                position: 'fixed',
+                bottom: '90px',
+                right: '20px',
+                zIndex: 1000,
+                backgroundColor: '#007BFF',
+                color: '#fff',
+                borderRadius: '50%',
+                padding: '15px',
+                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                textAlign: 'center'
+              }}
+            >
+              <FaPhone size={30} />
+            </a>
     </div>
   );
 };

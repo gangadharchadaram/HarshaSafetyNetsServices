@@ -4,9 +4,16 @@ import { motion } from 'framer-motion';
 import { Shield, CheckCircle, Star, ArrowRight, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+
+
 
 const Home = () => {
   const navigate = useNavigate();
+  const watsappNumber = "918142541365"; // Replace with your WhatsApp number
+  const phoneNumber = "918888888888";
+
 
   const services = [
     {
@@ -231,6 +238,42 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+      <a
+        href={`https://wa.me/${watsappNumber}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          zIndex: 1000,
+          backgroundColor: '#25D366',
+          color: '#fff',
+          borderRadius: '50%',
+          padding: '15px',
+          boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+          textAlign: 'center'
+        }}
+      >
+        <FaWhatsapp size={30} />
+      </a>
+       <a
+        href={`tel:${phoneNumber}`}
+        style={{
+          position: 'fixed',
+          bottom: '90px',
+          right: '20px',
+          zIndex: 1000,
+          backgroundColor: '#007BFF',
+          color: '#fff',
+          borderRadius: '50%',
+          padding: '15px',
+          boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+          textAlign: 'center'
+        }}
+      >
+        <FaPhone size={30} />
+      </a>
     </div>
   );
 };
