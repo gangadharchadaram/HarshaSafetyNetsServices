@@ -1,0 +1,63 @@
+.floating-icon {
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.floating-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Specific positioning */
+.toggle-icon {
+  bottom: 20px;
+  background-color: #555;
+}
+
+.call-icon {
+  bottom: 80px;
+  background-color: #007BFF;
+}
+
+.whatsapp-icon {
+  bottom: 140px;
+}
+
+/* Hidden state */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+}
+
+/* Visible state */
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .floating-icon {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .floating-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
