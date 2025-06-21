@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	darkMode: ['class'],
 	content: [
@@ -8,6 +9,11 @@ module.exports = {
 		'./src/**/*.{js,jsx}',
 	],
 	theme: {
+		extend: {
+      backgroundImage: {
+        'nets-pattern': "url('https://ik.imagekit.io/x3z2alsqy/constructin.jpeg?updatedAt=1750501764503')", // path to your net background image
+      },
+    },
 		container: {
 			center: true,
 			padding: '2rem',

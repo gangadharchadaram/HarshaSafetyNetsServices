@@ -57,7 +57,8 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center hero-pattern overflow-hidden">
+<section className="relative min-h-screen flex items-center justify-center bg-nets-pattern bg-cover bg-center overflow-hidden">
+  <div className="absolute inset-0 bg-blue-500/50 backdrop-blur-sm z-0"></div>
         <div className="absolute inset-0 gradient-bg opacity-90"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.div
