@@ -1,23 +1,12 @@
-import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Shield, CheckCircle, Star, ArrowRight, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { FaPhone, FaWhatsapp, FaChevronUp, FaChevronDown } from 'react-icons/fa';
-import './FloatingIcons.css'; 
-
-
+import FloatingActionButtons from './FloatingActionButtons'
 
 const Home = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
-
-  const phoneNumber = "918888888888";
-  const message = "Hi, I’m interested in your services!";
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-  const toggleIcons = () => setIsOpen(!isOpen);
 
   const services = [
     {
@@ -242,27 +231,7 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
-    <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`floating-icon whatsapp-icon ${isOpen ? 'visible' : 'hidden'}`}
-      >
-        <FaWhatsapp />
-      </a>
-
-      {/* Call Button */}
-      <a
-        href={`tel:${phoneNumber}`}
-        className={`floating-icon call-icon ${isOpen ? 'visible' : 'hidden'}`}
-      >
-        <FaPhone />
-      </a>
-
-      {/* Toggle Arrow Button */}
-      <button className="floating-icon toggle-icon" onClick={toggleIcons}>
-        {isOpen ? <FaChevronDown /> : <FaChevronUp />}
-      </button>
+      <FloatingActionButtons />
     </div>
   );
 };

@@ -4,13 +4,10 @@ import { MapPin, Calendar, Users, Star, CheckCircle } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa';
+import FloatingActionButtons from './FloatingActionButtons';
 
 const Works = () => {
   const navigate = useNavigate();
-    const watsappNumber = "918142541365"; 
-  const phoneNumber = "918142541365";
 
   const projects = [
     {
@@ -334,42 +331,7 @@ const Works = () => {
           </motion.div>
         </div>
       </section>
-        <a
-              href={`https://wa.me/${watsappNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                position: 'fixed',
-                bottom: '20px',
-                right: '20px',
-                zIndex: 1000,
-                backgroundColor: '#25D366',
-                color: '#fff',
-                borderRadius: '50%',
-                padding: '15px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                textAlign: 'center'
-              }}
-            >
-              <FaWhatsapp size={30} />
-            </a>
-             <a
-              href={`tel:${phoneNumber}`}
-              style={{
-                position: 'fixed',
-                bottom: '90px',
-                right: '20px',
-                zIndex: 1000,
-                backgroundColor: '#007BFF',
-                color: '#fff',
-                borderRadius: '50%',
-                padding: '15px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                textAlign: 'center'
-              }}
-            >
-              <FaPhone size={30} />
-            </a>
+       <FloatingActionButtons />
     </div>
   );
 };

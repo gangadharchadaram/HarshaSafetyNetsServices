@@ -3,8 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Users, Award, Clock, CheckCircle, Target } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa';
+import FloatingActionButtons from './FloatingActionButtons';
 
 const About = () => {
   const stats = [
@@ -13,8 +12,6 @@ const About = () => {
     { icon: Shield, label: 'Projects Completed', value: '100+' },
     { icon: Clock, label: 'Response Time', value: '24hrs' },
   ];
-  const watsappNumber = "918142541365"; 
-  const phoneNumber = "918142541365";
 
   const values = [
     {
@@ -309,42 +306,7 @@ const About = () => {
           </div>
         </div>
       </section>
-        <a
-              href={`https://wa.me/${watsappNumber}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                position: 'fixed',
-                bottom: '20px',
-                right: '20px',
-                zIndex: 1000,
-                backgroundColor: '#25D366',
-                color: '#fff',
-                borderRadius: '50%',
-                padding: '15px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                textAlign: 'center'
-              }}
-            >
-              <FaWhatsapp size={30} />
-            </a>
-             <a
-              href={`tel:${phoneNumber}`}
-              style={{
-                position: 'fixed',
-                bottom: '90px',
-                right: '20px',
-                zIndex: 1000,
-                backgroundColor: '#007BFF',
-                color: '#fff',
-                borderRadius: '50%',
-                padding: '15px',
-                boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
-                textAlign: 'center'
-              }}
-            >
-              <FaPhone size={30} />
-            </a>
+       <FloatingActionButtons />
     </div>
   );
 };
