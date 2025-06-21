@@ -6,9 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const About = () => {
   const stats = [
-    { icon: Users, label: 'Happy Customers', value: '500+' },
+    { icon: Users, label: 'Happy Customers', value: '200+' },
     { icon: Award, label: 'Years Experience', value: '10+' },
-    { icon: Shield, label: 'Projects Completed', value: '1000+' },
+    { icon: Shield, label: 'Projects Completed', value: '100+' },
     { icon: Clock, label: 'Response Time', value: '24hrs' },
   ];
 

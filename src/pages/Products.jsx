@@ -14,7 +14,7 @@ const Products = () => {
       title: 'Children Safety Nets',
       description: 'High-strength safety nets designed specifically for child protection on balconies, windows, and staircases.',
       features: ['UV Resistant', 'Weather Proof', 'Child-Safe Materials', 'Easy Maintenance'],
-      // image: 'Child safety nets installed on apartment balcony with colorful playground visible below',
+      image: 'https://ik.imagekit.io/x3z2alsqy/csn.jpg?updatedAt=1750499002336',
       category: 'Residential'
     },
     {
@@ -22,7 +22,7 @@ const Products = () => {
       title: 'Anti-Bird Protection Nets',
       description: 'Comprehensive bird control solutions to prevent nesting and protect your property from bird-related damage.',
       features: ['Invisible Protection', 'Humane Solution', 'Long Lasting', 'All Weather'],
-      image: 'Transparent anti-bird nets protecting building facade from pigeons and other birds',
+      image: 'https://ik.imagekit.io/x3z2alsqy/anti-bird.jpg?updatedAt=1750501201672',
       category: 'Commercial'
     },
     {
@@ -30,7 +30,7 @@ const Products = () => {
       title: 'Pigeon Balcony Safety Nets',
       description: 'Specialized nets to prevent pigeons from nesting and creating mess on balconies and terraces.',
       features: ['Pigeon Proof', 'Aesthetic Design', 'Easy Installation', 'Maintenance Free'],
-      image: 'Modern balcony with nearly invisible pigeon protection nets maintaining architectural beauty',
+      image: 'https://ik.imagekit.io/x3z2alsqy/61669+aZDXL._UF1000,1000_QL80_.jpg?updatedAt=1750501281128',
       category: 'Residential'
     },
     {
@@ -38,7 +38,7 @@ const Products = () => {
       title: 'Monkey Safety Nets',
       description: 'Heavy-duty nets designed to protect properties from monkey intrusions while ensuring animal safety.',
       features: ['Extra Strong', 'Animal Friendly', 'Durable Material', 'Custom Sizing'],
-      image: 'Strong safety nets protecting residential area from monkey intrusion near forest area',
+      image: 'https://ik.imagekit.io/x3z2alsqy/monkey-safety.jpg?updatedAt=1750501381002',
       category: 'Residential'
     },
     {
@@ -46,7 +46,7 @@ const Products = () => {
       title: 'Apartment Open Area Safety Nets',
       description: 'Safety nets for apartment common areas, courtyards, and open spaces to prevent accidents.',
       features: ['High Visibility', 'Strong Support', 'Fire Resistant', 'Professional Grade'],
-      image: 'Safety nets covering apartment courtyard and common areas with people walking safely below',
+      image: 'https://ik.imagekit.io/x3z2alsqy/apartment-opennets.webp?updatedAt=1750501479807',
       category: 'Commercial'
     },
     {
@@ -54,7 +54,7 @@ const Products = () => {
       title: 'Apartment Duct Area Safety Nets',
       description: 'Specialized nets for duct areas, utility spaces, and technical areas in apartment buildings.',
       features: ['Technical Grade', 'Heat Resistant', 'Easy Access', 'Maintenance Friendly'],
-      image: 'Safety nets installed around apartment building duct areas and utility spaces',
+      image: 'https://ik.imagekit.io/x3z2alsqy/duct-3.jpg?updatedAt=1750501599819',
       category: 'Commercial'
     },
     {
@@ -62,7 +62,7 @@ const Products = () => {
       title: 'Glass Protection Safety Nets',
       description: 'Protective nets for glass facades, windows, and glass structures to prevent breakage and injury.',
       features: ['Impact Resistant', 'Transparent Design', 'Glass Compatible', 'Weather Resistant'],
-      image: 'Protective nets installed on modern glass building facade for safety and protection',
+      image: 'https://ik.imagekit.io/x3z2alsqy/balcony1.jpg?updatedAt=1750501678321',
       category: 'Commercial'
     },
     {
@@ -70,7 +70,7 @@ const Products = () => {
       title: 'Construction Safety Nets',
       description: 'Professional-grade safety nets for construction sites, scaffolding, and building projects.',
       features: ['OSHA Compliant', 'High Strength', 'Debris Protection', 'Worker Safety'],
-      image: 'Construction site with safety nets protecting workers and pedestrians from falling debris',
+      image: 'https://ik.imagekit.io/x3z2alsqy/constructin.jpeg?updatedAt=1750501764503',
       category: 'Industrial'
     },
     {
@@ -78,7 +78,7 @@ const Products = () => {
       title: 'Swimming Pool Safety Nets',
       description: 'Pool safety nets to prevent accidental drowning and ensure water safety for families.',
       features: ['Water Resistant', 'Quick Removal', 'Child Safe', 'Pool Compatible'],
-      image: 'Swimming pool with safety nets providing protection while maintaining pool accessibility',
+      image: 'https://ik.imagekit.io/x3z2alsqy/swimming-pool-safety-net.jpg?updatedAt=1750501834469',
       category: 'Residential'
     },
     {
@@ -86,7 +86,7 @@ const Products = () => {
       title: 'Cricket Practice Nets',
       description: 'Professional cricket practice nets for training facilities, schools, and sports complexes.',
       features: ['Sports Grade', 'Impact Absorption', 'Weather Proof', 'Professional Size'],
-      image: 'Cricket practice nets set up in sports facility with players practicing batting and bowling',
+      image: 'https://ik.imagekit.io/x3z2alsqy/IMG_1446.jpeg?updatedAt=1750498269938',
       category: 'Sports'
     }
   ];
@@ -141,7 +141,7 @@ const Products = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.map((product, index) => (
@@ -153,15 +153,16 @@ const Products = () => {
               >
                 <Card className="h-full hover:shadow-xl transition-all duration-300 group">
                   <div className="relative overflow-hidden rounded-t-lg">
-                    <img  
+                    <img
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                       alt={`${product.title} installation`}
-                     src="https://images.unsplash.com/photo-1635865165118-917ed9e20936" />
+                      src={product.image}
+                    />
                     <div className="absolute top-4 right-4 bg-blue-400 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {product.category}
                     </div>
                   </div>
-                  
+
                   <CardHeader>
                     <div className="flex items-center space-x-3 mb-2">
                       <product.icon className="h-8 w-8 text-blue-400" />
@@ -171,21 +172,21 @@ const Products = () => {
                       {product.description}
                     </CardDescription>
                   </CardHeader>
-                  
+
                   <CardContent className="flex-1">
                     <div className="mb-6">
                       <h4 className="font-semibold text-gray-900 mb-3">Key Features:</h4>
                       <ul className="space-y-2">
-                        {product.features.map((feature, idx) => (
+                        {product.features.map((feat, idx) => (
                           <li key={idx} className="flex items-center space-x-2">
                             <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                            <span className="text-sm text-gray-600">{feature}</span>
+                            <span className="text-sm text-gray-600">{feat}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    
-                    <Button 
+
+                    <Button
                       className="w-full gradient-bg"
                       onClick={() => handleGetQuote(product.title)}
                     >

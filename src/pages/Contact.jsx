@@ -33,19 +33,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone Number',
-      details: '+91 98765 43210',
+      details: '+91 9618335268',
       description: 'Call us for immediate assistance'
     },
     {
       icon: Mail,
       title: 'Email Address',
-      details: 'info@varahibirdsafety.com',
+      details: 'info@harshasafetynetsservices.in',
       description: 'Send us your queries anytime'
     },
     {
       icon: MapPin,
       title: 'Office Address',
-      details: '123 Safety Street, Protection City, State - 560001',
+      details: 'Besdie skyline, Vinayaka garu apartment, Flat no: B1, Yendada, Visakhapatnam - 530045',
       description: 'Visit our office for consultation'
     },
     {
@@ -313,7 +313,7 @@ const Contact = () => {
               {/* Why Choose Us */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Why Choose Varahi Bird Safety Nets?</CardTitle>
+                  <CardTitle>Why Choose Harsha Safety Nets Services?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">

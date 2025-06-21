@@ -100,10 +100,10 @@ const Works = () => {
   ];
 
   const stats = [
-    { label: 'Projects Completed', value: '1000+' },
-    { label: 'Happy Clients', value: '500+' },
+    { label: 'Projects Completed', value: '100+' },
+    { label: 'Happy Clients', value: '200+' },
     { label: 'Years Experience', value: '10+' },
-    { label: 'Safety Nets Installed', value: '5000+' }
+    { label: 'Safety Nets Installed', value: '1000+' }
   ];
 
   const handleViewDetails = (projectTitle) => {

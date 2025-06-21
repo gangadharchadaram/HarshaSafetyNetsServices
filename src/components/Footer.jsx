@@ -13,12 +13,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
- <motion.img
-              alt="Harsha Safety Nets Services"
-              className="h-12 w-auto max-w-[220px]" // Adjust these as per your layout
-              // whileHover={{ rotate: [0, 10, -10, 0], scale: 1.1 }}
-              // transition={{ duration: 0.5 }}
-             src="https://ik.imagekit.io/x3z2alsqy/harsha_safety_nets_logo_only.png?updatedAt=1750251965500" />              <span className="text-xl font-bold">Harsha Safety Nets Services</span>
+           <span className="text-xl font-bold">Harsha Safety Nets Services</span>
             </div>
             <p className="text-gray-300 mb-4">
               Professional anti-bird control services providing comprehensive safety solutions 
@@ -51,16 +46,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91 98765 43210</span>
+                <span className="text-gray-300">+91 9618335268</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">info@harshasafetynets.com</span>
+                <span className="text-gray-300">info@harshasafetynetsservices.in</span>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-blue-400 mt-1" />
                 <span className="text-gray-300">
-                  123 Safety Street, Protection City, State - 560001
+                  Besdie skyline, Vinayaka garu apartment, Flat no: B1, Yendada, Visakhapatnam - 530045
                 </span>
               </div>
             </div>
@@ -69,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Harsha Safety Nets Services. All rights reserved. | Professional Anti-Bird Control Services
+            © 2025 Harsha Safety Nets Services. All rights reserved. | Professional Anti-Bird Control Services Developed by <Link href="https://vizagservices.in/" sx={{ textDecoration: "none" }}> TransformoWeb </Link>
           </p>
         </div>
       </div>
