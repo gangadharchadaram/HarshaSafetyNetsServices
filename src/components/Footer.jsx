@@ -34,7 +34,7 @@ const Footer = () => {
               <li><Link to="/" className="text-gray-300 hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-300 hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/products" className="text-gray-300 hover:text-primary transition-colors">Products</Link></li>
-              <li><Link to="/works" className="text-gray-300 hover:text-primary transition-colors">Previous Works</Link></li>
+              {/* <li><Link to="/works" className="text-gray-300 hover:text-primary transition-colors">Previous Works</Link></li> */}
               <li><Link to="/maintenance" className="text-gray-300 hover:text-primary transition-colors">Maintenance</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-primary transition-colors">Contact Us</Link></li>
             </ul>
@@ -55,7 +55,7 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-blue-400 mt-1" />
                 <span className="text-gray-300">
-                  Besdie skyline, Vinayaka garu apartment, Flat no: B1, Yendada, Visakhapatnam - 530045
+                  Beside skyline, Vinayaka garu apartment, Flat no: B1, Yendada, Visakhapatnam - 530045
                 </span>
               </div>
             </div>

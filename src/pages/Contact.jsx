@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Office Address',
-      details: 'Besdie skyline, Vinayaka garu apartment, Flat no: B1, Yendada, Visakhapatnam - 530045',
+      details: 'Beside skyline, Vinayaka garu apartment, Flat no: B1, Yendada, Visakhapatnam - 530045',
       description: 'Visit our office for consultation'
     },
     {
