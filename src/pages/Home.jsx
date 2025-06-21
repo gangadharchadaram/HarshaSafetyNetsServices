@@ -51,7 +51,7 @@ const Home = () => {
   ];
 
   const handleCallNow = () => {
-    window.location.href = 'tel:+919618335268';
+    window.location.href = 'tel:+9179955 19988';
   };
 
   return (

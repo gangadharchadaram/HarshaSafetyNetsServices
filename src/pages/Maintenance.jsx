@@ -101,7 +101,7 @@ const Maintenance = () => {
   };
 
   const handleEmergencyCall = () => {
-    window.location.href = 'tel:+919876543210';
+    window.location.href = 'tel:+917995519988';
   };
 
   return (
