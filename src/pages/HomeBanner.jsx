@@ -25,7 +25,7 @@ const HeroBanner = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-extrabold uppercase leading-tight">
-            Harsha <br /> Professional Safety <br /> Netting Services
+            Harsha <br /> Professional Bird <br /> Safety Nets
           </h1>
           <p className="text-white/90 text-base md:text-lg max-w-xl">
             Protecting your family and property with 
@@ -37,7 +37,12 @@ const HeroBanner = () => {
             size="lg"
             className="gradient-bg hover:bg-[#FBC02D] text-black font-semibold"
           >
-            <Link to="/contact">Contact Us</Link>
+              <a
+  href="tel:+917995519988"
+  className="inline-flex w-full justify-center items-center px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition font-semibold text-base shadow"
+>
+  Contact us
+</a>
           </Button>
         </motion.div>
       </div>
