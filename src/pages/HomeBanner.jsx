@@ -25,7 +25,7 @@ const HeroBanner = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-extrabold uppercase leading-tight">
-            Professional <br /> Safety Netting <br /> Services
+            Harsha <br /> Professional Safety <br /> Netting Services
           </h1>
           <p className="text-white/90 text-base md:text-lg max-w-xl">
             Protecting your family and property with 

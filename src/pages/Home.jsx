@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import FloatingActionButtons from './FloatingActionButtons'
 import HeroBanner from './HomeBanner';
+import MaintenanceProcessSection from '../components/maintenance/MaintenanceProcessSection';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -186,12 +187,12 @@ const Home = () => {
                 </ul>
               </div>
 
-              <Button
-                className="w-full gradient-bg"
-                onClick={() => handleGetQuote(product.title)}
-              >
-                Get Quote
-              </Button>
+             <a
+  href="tel:+917995519988"
+  className="inline-flex w-full justify-center items-center px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition font-semibold text-base shadow"
+>
+  Call +91 79955 19988
+</a>
             </CardContent>
           </Card>
         </motion.div>
@@ -242,6 +243,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <MaintenanceProcessSection />
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
@@ -308,32 +311,52 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-bg text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Secure Your Property?
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Get a free consultation and quote for your safety net requirements. 
-              Our experts are ready to help you choose the perfect solution.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-blue-400 hover:bg-gray-100">
-                <Link to="/contact">Get Free Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-blue-400 hover:bg-white hover:text-primary">
-                <Link to="/products">View Our Products</Link>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-      <FloatingActionButtons />
+<section className="py-20 gradient-bg text-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        Ready to Secure Your Property?
+      </h2>
+      <p className="text-xl mb-8 max-w-2xl mx-auto">
+        Get a free consultation and quote for your safety net requirements. 
+        Our experts are ready to help you choose the perfect solution.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="tel:+917995519988"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-md text-blue-400 bg-white hover:bg-gray-100 text-lg font-semibold shadow transition"
+        >
+          Call Now: +91 79955 19988
+        </a>
+        
+      </div>
+    </motion.div>
+  </div>
+</section>
+
+      <a
+  href="https://wa.me/917995519988"
+  className="fixed bottom-20 right-4 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20.52 3.48A11.92 11.92 0 0012 0C5.37 0 0 5.37 0 12a11.9 11.9 0 001.62 6l-1.6 5.84 6-1.57a11.93 11.93 0 005.98 1.56c6.63 0 12-5.37 12-12 0-3.18-1.24-6.18-3.48-8.52zm-8.52 18a10 10 0 01-5.06-1.4l-.36-.22-3.56.93.96-3.44-.23-.35a9.95 9.95 0 01-1.48-5.1c0-5.5 4.48-10 10-10s10 4.5 10 10-4.48 10-10 10zm5.32-7.26c-.28-.14-1.63-.8-1.88-.88-.25-.09-.43-.14-.61.14s-.7.88-.86 1.06c-.16.18-.32.2-.6.07s-1.17-.43-2.23-1.37c-.82-.73-1.38-1.63-1.54-1.9s-.02-.42.12-.56c.13-.13.29-.34.43-.5.14-.17.18-.28.28-.47.09-.19.04-.36-.02-.5-.06-.13-.6-1.45-.82-1.99-.22-.54-.45-.47-.61-.48h-.52c-.17 0-.45.07-.69.34s-.91.88-.91 2.14.93 2.49 1.07 2.67c.13.17 1.83 2.79 4.44 3.91.62.27 1.1.43 1.48.55.62.2 1.18.17 1.62.1.5-.08 1.63-.67 1.86-1.31.23-.64.23-1.2.16-1.31-.06-.11-.23-.17-.51-.3z" />
+  </svg>
+</a>
+<a
+  href="tel:+917995519988"
+  className="fixed bottom-4 right-4 z-50 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21.01 2.99 13.93 2.99 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58.11.34.03.71-.24 1.01l-2.2 2.2z" />
+  </svg>
+</a>
+
     </div>
   );
 };
